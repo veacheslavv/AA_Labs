@@ -1,4 +1,4 @@
-defmerge_sort(arr):
+def merge_sort(arr):
   if len(arr)<= 1:
     returnarr[:]
   mid= len(arr) //2
@@ -6,7 +6,7 @@ defmerge_sort(arr):
   right= merge_sort(arr[mid:])
   return _merge(left,right)
 
-def_merge(left,right):
+def _merge(left,right):
   i= j= 0
   result = []
   while i <len(left) and j < len(right):
